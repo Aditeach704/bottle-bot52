@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGen AI Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h1>🤖 CraftGenAI </h1>
+
+        <div class="status-box">
+            <h3>Status</h3>
+            <p id="statusText">Offline</p>
+        </div>
+    </div>
+
+    <!-- Main Panel -->
+    <div class="main-panel">
+
+        <div class="topbar">
+            <h2>Minecraft Bot Dashboard</h2>
+        </div>
+
+        <!-- Logs -->
+        <div class="logs-container">
+            <h3>Live Logs</h3>
+            <div id="logs"></div>
+        </div>
+
+        <!-- Command Input -->
+        <div class="command-section">
+            <input 
+                type="text" 
+                id="commandInput"
+                placeholder="Type start or restart..."
+            >
+            <button id="sendCommand">Send</button>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
