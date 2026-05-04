@@ -4,7 +4,7 @@ const btn = document.getElementById("sendCommand");
 const statusText = document.getElementById("statusText");
 
 // 🔥 CHANGE THIS TO YOUR HOSTED BACKEND URL (NOT localhost)
-const socket = io("http://localhost:3000");
+const socket = io("");
 
 // =====================
 // CONNECTION STATUS
